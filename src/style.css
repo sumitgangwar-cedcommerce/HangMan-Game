@@ -1,0 +1,123 @@
+body{
+    background-color: rgb(218, 218, 218);
+}
+button{
+    cursor: pointer;
+}
+.starter{
+    position: absolute;
+    top : 50%;
+    left : 50%;
+    transform: translate(-50% , -50%);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: white;
+    padding: 5vw;
+}
+.starter p{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.starter p:hover{
+    background-color: steelblue;
+    color: white;
+}
+
+/* hangman */
+
+.hangMan{
+    min-height: 70vh;
+    min-width: 70vw;
+}
+
+.input-box{
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    margin: 20px;
+}
+.input-box div{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgb(21, 155, 0);
+    color: white;
+    font-weight: 900;
+}
+
+.btn-list{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+.btn-list button{
+    display: inline-block;
+    padding: 1%;
+    margin: 1%;
+    flex-grow: 1;
+    font-size: 20px;
+    width: calc(100% * (1/13) - 2%);
+    text-align: center;
+    background-color: steelblue;
+    color: white;
+    border:none;
+    border-radius: 5px;
+    font-weight: 900;
+    box-shadow: rgb(0, 0, 0) 0px 5px;
+}
+.btn-list button:hover{
+    transform: scale(1.1);
+}
+.btn-list button:disabled{
+    background-color: slategrey;
+    color: rgb(255, 255, 255);
+    box-shadow: none;
+}
+.btn-list button:disabled:hover{
+    transform: scale(1);
+}
+
+.img{
+    width : 99px;
+    overflow: hidden;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+img{
+    position: relative;
+    width : 700px;
+}
+
+.res{
+    text-align: center;
+}
+.res button{
+    border:none;
+    padding: 10px 20px;
+    font-weight: 900;
+    font-size: 30px;
+    background-color: steelblue;
+    color:white;
+    border-radius: 10px;
+    z-index: 100;
+}
+.res button:hover{
+    transform: scale(1.2);
+}
+.res h3{
+    font-weight: 900;
+    font-size: 30px;
+}
+.fa-heart{
+    color:red;
+    margin: 2px;
+}
